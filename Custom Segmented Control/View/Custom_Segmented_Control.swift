@@ -7,6 +7,7 @@ import UIKit
 class Custom_Segmented_Control: UIView {
 
     var buttons = [UIButton]()
+    var selector: UIView!
     
     @IBInspectable
     var border_width: CGFloat = 0 {
@@ -36,6 +37,20 @@ class Custom_Segmented_Control: UIView {
         }
     }
     
+    @IBInspectable
+    var selector_color: UIColor = .lightGray {
+        didSet {
+            update_view()
+        }
+    }
+    
+    @IBInspectable
+    var selector_text_color: UIColor = .white {
+        didSet {
+            update_view()
+        }
+    }
+    
     func update_view() {
         buttons.removeAll()
         subviews.forEach { $0.removeFromSuperview() }
@@ -49,11 +64,17 @@ class Custom_Segmented_Control: UIView {
             buttons.append(button)
         }
         
+        let selector_width = frame.width / CGFloat(button_titles.count)
+        selector = UIView(frame: CGRect(x: 0, y: 0, width: selector_width, height: frame.height))
+        selector.layer.cornerRadius = frame.height / 2
+        selector.backgroundColor = selector_color
+        addSubview(selector)
+        
         let stack_view = UIStackView(arrangedSubviews: buttons)
         
         stack_view.axis = .horizontal
         stack_view.alignment = .fill
-        stack_view.distribution = .fillProportionally
+        stack_view.distribution = .fillEqually
         
         addSubview(stack_view)
         
