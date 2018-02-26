@@ -40,7 +40,7 @@
 		D4856B7C2044923900F7E71F = {
 			isa = PBXGroup;
 			children = (
-				D4856B872044923900F7E71F /* Custom Segmented Conrol */,
+				D4856B872044923900F7E71F /* Custom Segmented Control */,
 				D4856B862044923900F7E71F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,7 +53,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D4856B872044923900F7E71F /* Custom Segmented Conrol */ = {
+		D4856B872044923900F7E71F /* Custom Segmented Control */ = {
 			isa = PBXGroup;
 			children = (
 				D4856B9D2044951400F7E71F /* Model */,
@@ -66,7 +66,7 @@
 				D4856B912044923900F7E71F /* LaunchScreen.storyboard */,
 				D4856B942044923900F7E71F /* Info.plist */,
 			);
-			path = "Custom Segmented Conrol";
+			path = "Custom Segmented Control";
 			sourceTree = "<group>";
 		};
 		D4856B9A2044950900F7E71F /* Resources */ = {
