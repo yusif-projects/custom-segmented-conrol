@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D4856B852044923900F7E71F /* Custom Segmented Conrol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Custom Segmented Conrol.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4856B852044923900F7E71F /* Custom Segmented Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Custom Segmented Control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4856B882044923900F7E71F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4856B8A2044923900F7E71F /* Main_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main_VC.swift; sourceTree = "<group>"; };
 		D4856B8D2044923900F7E71F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		D4856B862044923900F7E71F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D4856B852044923900F7E71F /* Custom Segmented Conrol.app */,
+				D4856B852044923900F7E71F /* Custom Segmented Control.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,9 +102,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D4856B842044923900F7E71F /* Custom Segmented Conrol */ = {
+		D4856B842044923900F7E71F /* Custom Segmented Control */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4856B972044923900F7E71F /* Build configuration list for PBXNativeTarget "Custom Segmented Conrol" */;
+			buildConfigurationList = D4856B972044923900F7E71F /* Build configuration list for PBXNativeTarget "Custom Segmented Control" */;
 			buildPhases = (
 				D4856B812044923900F7E71F /* Sources */,
 				D4856B822044923900F7E71F /* Frameworks */,
@@ -114,9 +114,9 @@
 			);
 			dependencies = (
 			);
-			name = "Custom Segmented Conrol";
+			name = "Custom Segmented Control";
 			productName = "Custom Segmented Conrol";
-			productReference = D4856B852044923900F7E71F /* Custom Segmented Conrol.app */;
+			productReference = D4856B852044923900F7E71F /* Custom Segmented Control.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -135,7 +135,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D4856B802044923900F7E71F /* Build configuration list for PBXProject "Custom Segmented Conrol" */;
+			buildConfigurationList = D4856B802044923900F7E71F /* Build configuration list for PBXProject "Custom Segmented Control" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -148,7 +148,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D4856B842044923900F7E71F /* Custom Segmented Conrol */,
+				D4856B842044923900F7E71F /* Custom Segmented Control */,
 			);
 		};
 /* End PBXProject section */
@@ -339,7 +339,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D4856B802044923900F7E71F /* Build configuration list for PBXProject "Custom Segmented Conrol" */ = {
+		D4856B802044923900F7E71F /* Build configuration list for PBXProject "Custom Segmented Control" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4856B952044923900F7E71F /* Debug */,
@@ -348,7 +348,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4856B972044923900F7E71F /* Build configuration list for PBXNativeTarget "Custom Segmented Conrol" */ = {
+		D4856B972044923900F7E71F /* Build configuration list for PBXNativeTarget "Custom Segmented Control" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4856B982044923900F7E71F /* Debug */,
