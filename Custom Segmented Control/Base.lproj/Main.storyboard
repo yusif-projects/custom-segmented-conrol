@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Unknown constraint types" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,47 +17,74 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="Main_VC" customModule="Custom_Segmented_Control" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I9g-Hh-zeu" customClass="Custom_Segmented_Control" customModule="Custom_Segmented_Control" customModuleProvider="target">
-                                <rect key="frame" x="20" y="381" width="335" height="50"/>
-                                <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="k6D-mG-9et">
+                                <rect key="frame" x="20.5" y="131.5" width="334.5" height="404.5"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I9g-Hh-zeu" customClass="Custom_Segmented_Control" customModule="Custom_Segmented_Control" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="334.5" height="50"/>
+                                        <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="I9g-Hh-zeu" secondAttribute="trailing" id="De0-Wz-0kL"/>
+                                            <constraint firstAttribute="height" constant="50" id="Y21-wd-ejK"/>
+                                            <constraint firstAttribute="leading" secondItem="I9g-Hh-zeu" secondAttribute="leading" id="Zpj-jd-6nn"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="border_width">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="button_titles_seperated_by_commas" value="John,Paul,George,Ringo"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="border_color">
+                                                <color key="value" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="button_text_color">
+                                                <color key="value" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selector_color">
+                                                <color key="value" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selector_text_color">
+                                                <color key="value" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="segment_changed:" destination="BYZ-38-t0r" eventType="valueChanged" id="yil-Nw-I8w"/>
+                                        </connections>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="john" translatesAutoresizingMaskIntoConstraints="NO" id="p4C-cO-Tek">
+                                        <rect key="frame" x="0.0" y="70" width="334.5" height="334.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="p4C-cO-Tek" secondAttribute="height" multiplier="1:1" id="oEG-J4-M35"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="pxm-fW-xfo"/>
+                                    <constraint firstItem="I9g-Hh-zeu" firstAttribute="leading" secondItem="k6D-mG-9et" secondAttribute="leading" id="mja-br-Gwb"/>
+                                    <constraint firstAttribute="trailing" secondItem="I9g-Hh-zeu" secondAttribute="trailing" id="vcH-tc-pMb"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="border_width">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="button_titles_seperated_by_commas" value="John,Paul,George,Ringo"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="border_color">
-                                        <color key="value" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="button_text_color">
-                                        <color key="value" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="selector_color">
-                                        <color key="value" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="selector_text_color">
-                                        <color key="value" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="I9g-Hh-zeu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="IvD-aA-WL5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I9g-Hh-zeu" secondAttribute="trailing" constant="20" id="XFC-WZ-hc8"/>
-                            <constraint firstItem="I9g-Hh-zeu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tsk-hx-N6i"/>
+                            <constraint firstItem="k6D-mG-9et" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8Dk-rx-obf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k6D-mG-9et" secondAttribute="trailing" constant="20" id="mx7-0g-pgc"/>
+                            <constraint firstItem="k6D-mG-9et" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="p92-AU-OdO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="custom_segmented_control" destination="I9g-Hh-zeu" id="sMR-an-6Dt"/>
+                        <outlet property="image_view" destination="p4C-cO-Tek" id="tDB-cJ-mgZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
+            <point key="canvasLocation" x="32.799999999999997" y="33.251231527093594"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="john" width="500" height="688"/>
+    </resources>
 </document>

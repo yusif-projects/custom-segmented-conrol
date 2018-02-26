@@ -8,6 +8,7 @@ class Custom_Segmented_Control: UIControl {
 
     var buttons = [UIButton]()
     var selector: UIView!
+    var selected_button_idex = 0
     
     @IBInspectable
     var border_width: CGFloat = 0 {
@@ -99,6 +100,8 @@ class Custom_Segmented_Control: UIControl {
             button.setTitleColor(button_text_color, for: .normal)
             
             if button == pressed_button {
+                selected_button_idex = button_index
+                
                 let selector_start_position_x = frame.width / CGFloat(buttons.count) * CGFloat(button_index)
                 
                 UIView.animate(withDuration: 0.3, animations: {
