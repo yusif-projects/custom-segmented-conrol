@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		D4856B892044923900F7E71F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4856B882044923900F7E71F /* AppDelegate.swift */; };
-		D4856B8B2044923900F7E71F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4856B8A2044923900F7E71F /* ViewController.swift */; };
+		D4856B8B2044923900F7E71F /* Main_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4856B8A2044923900F7E71F /* Main_VC.swift */; };
 		D4856B8E2044923900F7E71F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4856B8C2044923900F7E71F /* Main.storyboard */; };
 		D4856B902044923900F7E71F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4856B8F2044923900F7E71F /* Assets.xcassets */; };
 		D4856B932044923900F7E71F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4856B912044923900F7E71F /* LaunchScreen.storyboard */; };
+		D4856B9F2044956100F7E71F /* Custom_Segmented_Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4856B9E2044956100F7E71F /* Custom_Segmented_Control.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D4856B852044923900F7E71F /* Custom Segmented Conrol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Custom Segmented Conrol.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4856B882044923900F7E71F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D4856B8A2044923900F7E71F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D4856B8A2044923900F7E71F /* Main_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main_VC.swift; sourceTree = "<group>"; };
 		D4856B8D2044923900F7E71F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4856B8F2044923900F7E71F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4856B922044923900F7E71F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4856B942044923900F7E71F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4856B9E2044956100F7E71F /* Custom_Segmented_Control.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom_Segmented_Control.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,47 @@
 		D4856B872044923900F7E71F /* Custom Segmented Conrol */ = {
 			isa = PBXGroup;
 			children = (
+				D4856B9D2044951400F7E71F /* Model */,
+				D4856B9C2044951100F7E71F /* View */,
+				D4856B9B2044950E00F7E71F /* Controller */,
+				D4856B9A2044950900F7E71F /* Resources */,
 				D4856B882044923900F7E71F /* AppDelegate.swift */,
-				D4856B8A2044923900F7E71F /* ViewController.swift */,
 				D4856B8C2044923900F7E71F /* Main.storyboard */,
 				D4856B8F2044923900F7E71F /* Assets.xcassets */,
 				D4856B912044923900F7E71F /* LaunchScreen.storyboard */,
 				D4856B942044923900F7E71F /* Info.plist */,
 			);
 			path = "Custom Segmented Conrol";
+			sourceTree = "<group>";
+		};
+		D4856B9A2044950900F7E71F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D4856B9B2044950E00F7E71F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D4856B8A2044923900F7E71F /* Main_VC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D4856B9C2044951100F7E71F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D4856B9E2044956100F7E71F /* Custom_Segmented_Control.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D4856B9D2044951400F7E71F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +171,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4856B8B2044923900F7E71F /* ViewController.swift in Sources */,
+				D4856B8B2044923900F7E71F /* Main_VC.swift in Sources */,
+				D4856B9F2044956100F7E71F /* Custom_Segmented_Control.swift in Sources */,
 				D4856B892044923900F7E71F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +317,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yusif-the-ios-developer.Custom-Segmented-Conrol";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -296,7 +332,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yusif-the-ios-developer.Custom-Segmented-Conrol";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
