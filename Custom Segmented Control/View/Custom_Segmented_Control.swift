@@ -61,8 +61,11 @@ class Custom_Segmented_Control: UIView {
             let button = UIButton(type: .system)
             button.setTitle(button_title, for: .normal)
             button.setTitleColor(button_text_color, for: .normal)
+            button.addTarget(self, action: #selector(button_pressed(pressed_button:)), for: .touchUpInside)
             buttons.append(button)
         }
+        
+        buttons[0].setTitleColor(selector_text_color, for: .normal)
         
         let selector_width = frame.width / CGFloat(button_titles.count)
         selector = UIView(frame: CGRect(x: 0, y: 0, width: selector_width, height: frame.height))
@@ -89,6 +92,15 @@ class Custom_Segmented_Control: UIView {
     
     override func draw(_ rect: CGRect) {
         layer.cornerRadius = frame.height / 2
+    }
+    
+    @objc func button_pressed(pressed_button: UIButton) {
+        for button in buttons {
+            button.setTitleColor(button_text_color, for: .normal)
+            if button == pressed_button {
+                button.setTitleColor(selector_text_color, for: .normal)
+            }
+        }
     }
 
 }
