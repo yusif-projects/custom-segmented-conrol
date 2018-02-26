@@ -4,7 +4,7 @@
 import UIKit
 
 @IBDesignable
-class Custom_Segmented_Control: UIView {
+class Custom_Segmented_Control: UIControl {
 
     var buttons = [UIButton]()
     var selector: UIView!
@@ -108,6 +108,8 @@ class Custom_Segmented_Control: UIView {
                 button.setTitleColor(selector_text_color, for: .normal)
             }
         }
+        
+        sendActions(for: .valueChanged)
     }
 
 }
