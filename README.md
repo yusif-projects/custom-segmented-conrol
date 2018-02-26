@@ -1,4 +1,4 @@
-# Custom Segmented Conrol
+# Custom Segmented Control
 ###### Creating a class for UIView to replace the UISegmentedControl with more customizable option.
 
 * **Swift 4**
