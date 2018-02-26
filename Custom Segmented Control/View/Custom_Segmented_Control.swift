@@ -67,7 +67,7 @@ class Custom_Segmented_Control: UIView {
         
         buttons[0].setTitleColor(selector_text_color, for: .normal)
         
-        let selector_width = frame.width / CGFloat(button_titles.count)
+        let selector_width = frame.width / CGFloat(buttons.count)
         selector = UIView(frame: CGRect(x: 0, y: 0, width: selector_width, height: frame.height))
         selector.layer.cornerRadius = frame.height / 2
         selector.backgroundColor = selector_color
@@ -95,9 +95,16 @@ class Custom_Segmented_Control: UIView {
     }
     
     @objc func button_pressed(pressed_button: UIButton) {
-        for button in buttons {
+        for (button_index, button) in buttons.enumerated() {
             button.setTitleColor(button_text_color, for: .normal)
+            
             if button == pressed_button {
+                let selector_start_position_x = frame.width / CGFloat(buttons.count) * CGFloat(button_index)
+                
+                UIView.animate(withDuration: 0.3, animations: {
+                    self.selector.frame.origin.x = selector_start_position_x
+                })
+                
                 button.setTitleColor(selector_text_color, for: .normal)
             }
         }
