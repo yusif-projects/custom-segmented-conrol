@@ -12,7 +12,7 @@ class Main_VC: UIViewController {
         super.viewDidLoad()
         
         image_view.layer.borderWidth = custom_segmented_control.layer.borderWidth
-        image_view.layer.cornerRadius = image_view.frame.width / 2
+        image_view.layer.cornerRadius = image_view.frame.width / 8
         image_view.layer.borderColor = custom_segmented_control.layer.borderColor
     }
 
