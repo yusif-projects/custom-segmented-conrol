@@ -35,7 +35,7 @@
                                             <userDefinedRuntimeAttribute type="number" keyPath="border_width">
                                                 <real key="value" value="2"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="button_titles_seperated_by_commas" value="John,Paul,George,Ringo"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="button_titles_seperated_by_commas" value="1,2,3,4,5"/>
                                             <userDefinedRuntimeAttribute type="color" keyPath="border_color">
                                                 <color key="value" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
